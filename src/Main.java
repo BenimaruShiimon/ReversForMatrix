@@ -16,23 +16,23 @@ public class Main {
         }
         System.out.println("Дана следующая матрица: ");
         getPrint(color);
-        System.out.println("Выбери степерь переворота: " + " 90 градусов " + " 180 градусов " + " 270 градусов ");
+        System.out.println("Выбери степень переворота: " + " 90 градусов " + " 180 градусов " + " 270 градусов ");
         int input = scanner.nextInt();
         switch (input) {
             case 90:
                 System.out.println("Вы выбрали переворот на 90 гардусов!\n" + "Переворот: ");
                 reversed90(color, rotatedColor);
-                getPrint(color);
+                getPrint(rotatedColor);
                 break;
             case 180:
                 System.out.println("Вы выбрали переворот на 180 гардусов!\n" + "Переворот: ");
                 reversed180(color, rotatedColor);
-                getPrint(color);
+                getPrint(rotatedColor);
                 break;
             case 270:
                 System.out.println("Вы выбрали переворот на 270 гардусов!\n" + "Переворот: ");
                 reversed270(color, rotatedColor);
-                getPrint(color);
+                getPrint(rotatedColor);
                 break;
         }
         scanner.close();
